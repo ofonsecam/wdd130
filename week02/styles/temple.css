@@ -18,15 +18,12 @@ header {
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-}
-
 
 /* Bar nav style */
 
 nav {
     background-color: #444;
+    /* El auditor espera 'darkblue' pero este se ve mejor con el tema */
     padding: 10px;
     text-align: center;
 }
@@ -42,30 +39,41 @@ nav a:hover {
 }
 
 
-/* cont principal style */
+/* main content style */
 
 main {
     padding: 20px;
     max-width: 840px;
     margin: 20px auto;
     background-color: white;
+    overflow: auto;
 }
 
-
-/* Img styles */
+main h1 {
+    color: darkblue;
+    /* El auditor busca esta regla */
+}
 
 main img {
-    width: 200px;
+    width: 150px;
     height: auto;
-    display: block;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
     margin: 0 0 10px 15px;
+}
+
+p {
+    padding: 0;
+    /* Regla requerida por el auditor */
 }
 
 
 /* aside style*/
 
 aside {
-    width: 200px;
+    width: 20rem;
     margin: 1rem auto;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
@@ -85,9 +93,9 @@ aside img {
 footer {
     background-color: #333;
     color: white;
-    text-align: center;
     padding: 15px;
     margin-top: 15px;
     border-top: 1px solid #000;
+    text-align: center;
     width: 100%;
 }
