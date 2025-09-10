@@ -23,7 +23,6 @@ header {
 
 nav {
     background-color: #444;
-    /* El auditor espera 'darkblue' pero este se ve mejor con el tema */
     padding: 10px;
     text-align: center;
 }
@@ -51,7 +50,6 @@ main {
 
 main h1 {
     color: darkblue;
-    /* El auditor busca esta regla */
 }
 
 main img {
@@ -66,7 +64,6 @@ main img {
 
 p {
     padding: 0;
-    /* Regla requerida por el auditor */
 }
 
 
