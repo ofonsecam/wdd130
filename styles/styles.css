@@ -1,26 +1,99 @@
+/* General style of the page*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+/* Header style */
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Bar nav style */
+
 nav {
     background-color: darkblue;
     padding: 10px;
+    text-align: center;
 }
 
 nav a {
     color: white;
     display: block;
     padding: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+
+/* main content style */
+
+main {
+    max-width: 840px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    overflow: auto;
 }
 
 h1 {
     color: darkblue;
 }
 
-img {
+main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 10px 15px;
 }
 
 p {
-    padding: 10px;
+    padding: 0;
+}
+
+
+/* aside style*/
+
+aside {
+    width: 20rem;
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+
+/* footer style */
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+    width: 100%;
 }
