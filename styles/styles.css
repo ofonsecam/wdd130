@@ -1,5 +1,11 @@
 /* General style of the page*/
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     /*Color paled*/
     --primary-color: #333;
@@ -89,17 +95,30 @@ p {
 
 aside {
     width: 20rem;
-    margin: 1rem auto;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: var(--background-aside-color);
-    color: var(--primary-color);
     text-align: center;
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
 }
 
 aside img {
     width: 200px;
     height: auto;
+}
+
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
 }
 
 
