@@ -47,14 +47,18 @@ header {
 nav {
     background-color: var(--secondary-color);
     padding: var(--padding-medium);
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: var(--text-light-color);
     display: block;
-    padding: var(--padding-large);
+    padding: 0.5rem;
     text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 nav a:hover {
@@ -65,7 +69,6 @@ nav a:hover {
 /* main content style */
 
 main {
-    max-width: 840px;
     margin: var(--padding-large) auto;
     padding: var(--padding-large);
     background-color: var(--text-light-color);
@@ -74,39 +77,18 @@ main {
 
 h1 {
     color: var(--secondary-color);
-}
-
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid var(--neutral-dark-color);
-    padding: 2px;
-    box-shadow: 0 0 30px var(--neutral-gray-color);
-    float: right;
-    margin: 0 0 var(--padding-medium) var(--padding-footer);
-}
-
-p {
-    padding: 0;
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 
 /* aside style*/
 
 aside {
-    width: 20rem;
     text-align: center;
-    position: relative;
 }
 
-aside h2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+p {
+    padding: 0;
 }
 
 aside img {
@@ -126,6 +108,17 @@ aside img {
 }
 
 
+/* grid section */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding: var(--padding-large);
+    background-color: var(--text-light-color);
+}
+
+
 /* footer style */
 
 footer {
@@ -135,5 +128,14 @@ footer {
     margin-top: var(--padding-footer);
     border-top: 1px solid var(--neutral-dark-color);
     text-align: center;
-    width: 100%;
+}
+
+
+/* header, grid, footer */
+
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
