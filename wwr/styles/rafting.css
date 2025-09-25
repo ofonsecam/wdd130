@@ -18,6 +18,14 @@ body {
     color: var(--accent2-color);
 }
 
+.history-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    align-items: center;
+    padding: 2rem;
+}
+
 section {
     padding: 1rem;
     margin: 1rem;
@@ -42,10 +50,20 @@ h6 {
 
 header {
     display: grid;
-    grid-template-columns: 40px 1fr;
+    grid-template-columns: 150px 1fr;
     align-items: center;
     padding: 20px;
     background-color: var(--accent1-color);
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
 }
 
 nav a {
@@ -93,11 +111,40 @@ nav a:hover {
     margin-left: 1rem;
 }
 
+.adventures-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-top: 1.5rem;
+}
+
+.adventures-container figure {
+    text-align: center;
+}
+
+.adventures-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.adventures-container figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: var(--accent2-color);
+}
+
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    background-color: var(--accent1-color);
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
 }
 
 .socialmedia a {
