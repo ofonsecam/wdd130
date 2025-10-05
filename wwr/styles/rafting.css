@@ -200,7 +200,7 @@ footer {
     padding: 1rem;
 }
 
-.profiles-container {
+.profiles-container { 
     display: flex;
     justify-content: space-around;
     gap: 1.5rem;
