@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Dry Oar Rafting</title> 
+    <meta name="description" content="Send us a message, call, or visit us. Find our address and hours on Dry Oar Rafting's Contact Us page.">
+    <meta name="author" content="Oscar Fonseca">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Site Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+       <main class="contact-grid">
+    <section class="company-info">
+        <h2>Contact Information</h2>
+        <address>
+            <p><strong>Address:</strong> 123 River Road, Raftville, CO 80111</p>
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+            <p><strong>Reservations:</strong> (555) 987-6543</p>
+            <p><strong>Email:</strong> <a href="mailto:info@dryoarrafting.com">info@dryoarrafting.com</a></p>
+        </address>
+    </section>
+
+    <section class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15335.700140220641!2d-105.2838334!3d40.0149851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876bec83ff9d80d7%3A0xc62b694726d5570d!2sBoulder%2C%20Colorado%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sco!4v1715800000000!5m2!1ses-419!2sco"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="employee-profiles">
+        <h2>Meet Our Team</h2>
+        <div class="profiles-container">
+            <figure>
+                <img src="images/employee1.jpg" alt="Photo of Founder, Jane Doe">
+                <figcaption>Jane Doe<br>Founder & Lead Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.jpg" alt="Photo of Operations Manager, Bob Smith">
+                <figcaption>Bob Smith<br>Operations Manager</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.jpg" alt="Photo of Booking Specialist, Alice Johnson">
+                <figcaption>Alice Johnson<br>Booking Specialist</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="contact-form-section">
+        <h2>Send Us a Message</h2>
+        <form action="submit_form.php" method="post" class="contact-form">
+            
+            <div class="form-group">
+                <label for="user_name">Name:</label>
+                <input type="text" id="user_name" name="user_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="user_email">Email Address:</label>
+                <input type="email" id="user_email" name="user_email" required>
+            </div>
+
+            <fieldset class="purpose-group">
+                <legend>Purpose of Message:</legend>
+                <div class="radio-options">
+                    
+                    <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                    <label for="general">General Inquiry</label>
+
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                    <label for="reservation">Reservation Question</label>
+
+                    <input type="radio" id="website" name="purpose" value="Website Suggestion">
+                    <label for="website">Website Suggestion</label>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+
+            <div class="form-group newsletter-checkbox">
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    </main>
+    <footer>
+        <p>©️2025 | Dry Oar Rafting | Oscar Fonseca</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook-icon.jpeg" alt="Link to our Facebook page">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter-icon.png" alt="Link to our Twitter page">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram-logo.jpeg" alt="Link to our Instagram page">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
