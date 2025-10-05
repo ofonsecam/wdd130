@@ -4,9 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contáctanos | Dry Oar Rafting</title>
-    <meta name="description"
-        content="Envíanos un mensaje, llama o visítanos. Consulta nuestras direcciones y horarios en nuestra página de Contacto de Dry Oar Rafting.">
+    <title>About Us | Dry Oar Rafting</title>
+    <meta name="description" content="A page with information about our rafting company history and purpose.">
     <meta name="author" content="Oscar Fonseca">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -21,84 +20,55 @@
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
-
-    <main class="contact-grid">
-        <section class="company-info">
-            <h2>Información de Contacto</h2>
-            <address>
-                <p><strong>Dirección:</strong> 123 River Road, Raftville, CO 80111</p>
-                <p><strong>Teléfono:</strong> (555) 123-4567</p>
-                <p><strong>Reservas:</strong> (555) 987-6543</p>
-                <p><strong>Email:</strong> <a href="mailto:info@dryoarrafting.com">info@dryoarrafting.com</a></p>
-            </address>
+    <main>
+        <div class="hero">
+            <img src="images/hero-image.jpeg" alt="A group of people enjoying white water rafting on a sunny day">
+            <h1>Dry Oar Rafting</h1>
+            <article>
+                <img src="images/happy-client.jpeg" alt="Happy Client">
+                <p>
+                    Our mission at Dry Oar Rafting is to create unforgettable river adventures. We are passionate about
+                    sharing the thrill of the rapids while ensuring the highest standards of safety with our expert
+                    guides. Join us to connect with nature and forge memories
+                    that will last a lifetime.
+                </p>
+            </article>
+        </div>
+        <section class="history-section">
+            <h2>History</h2>
+            <p>
+                It all started with a simple love for the river. Our founder spent years guiding trips before deciding
+                to build a company that put the guest experience first. Since 2010, we've been dedicated to creating
+                small-group adventures that feel less like a tour
+                and more like a day on the water with good friends.
+            </p>
         </section>
-
-        <section class="map-container">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15335.700140220641!2d-105.2838334!3d40.0149851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876bec83ff9d80d7%3A0xc62b694726d5570d!2sBoulder%2C%20Colorado%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sco!4v1715800000000!5m2!1ses-419!2sco"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-
-        <section class="employee-profiles">
-            <h2>Conoce a Nuestro Equipo</h2>
-            <div class="profiles-container">
+        <section>
+            <h2>Adventure Awaits You!</h2>
+            <div class="adventures-container">
                 <figure>
-                    <img src="images/employee1.jpg" alt="Foto de la Fundadora, Jane Doe">
-                    <figcaption>Jane Doe<br>Fundadora y Guía Principal</figcaption>
+                    <img src="images/river-rapid.jpg" alt="Rafting a large rapid">
+                    <figcaption>Los Dientes del Diablo</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employee2.jpg" alt="Foto del Gerente de Operaciones, Bob Smith">
-                    <figcaption>Bob Smith<br>Gerente de Operaciones</figcaption>
+                    <img src="images/river-camping.jpg" alt="Campsite by the river">
+                    <figcaption>Big Mallard</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employee3.jpg" alt="Foto de la Especialista en Reservas, Alice Johnson">
-                    <figcaption>Alice Johnson<br>Especialista en Reservas</figcaption>
+                    <img src="images/river-water.jpg" alt="Calm river section">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/oars.jpg" alt="Rafting paddles">
+                    <figcaption>Scenic Floats</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting-family.jpg" alt="Family rafting">
+                    <figcaption>Family Fun</figcaption>
                 </figure>
             </div>
         </section>
-
-        <section class="contact-form-section">
-            <h2>Envíanos un Mensaje</h2>
-            <form action="submit_form.php" method="post" class="contact-form">
-                <div class="form-group">
-                    <label for="user_name">Nombre:</label>
-                    <input type="text" id="user_name" name="user_name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="user_email">Correo Electrónico:</label>
-                    <input type="email" id="user_email" name="user_email" required>
-                </div>
-
-                <fieldset class="purpose-group">
-                    <legend>Propósito del Mensaje:</legend>
-                    <div class="radio-options">
-                        <input type="radio" id="general" name="purpose" value="General Inquiry" required>
-                        <label for="general">Consulta General</label>
-
-                        <input type="radio" id="reservation" name="purpose" value="Reservation Question">
-                        <label for="reservation">Pregunta de Reserva</label>
-
-                        <input type="radio" id="website" name="purpose" value="Website Suggestion">
-                        <label for="website">Sugerencia del Sitio Web</label>
-                    </div>
-                </fieldset>
-
-                <div class="form-group">
-                    <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
-                </div>
-
-                <div class="form-group newsletter-checkbox">
-                    <input type="checkbox" id="subscribe" name="subscribe" value="yes">
-                    <label for="subscribe">Por favor, suscríbeme al boletín mensual</label>
-                </div>
-
-                <button type="submit">Enviar Mensaje</button>
-            </form>
-        </section>
     </main>
-
     <footer>
         <p>©️2025 | Dry Oar Rafting | Oscar Fonseca</p>
         <nav class="socialmedia">
