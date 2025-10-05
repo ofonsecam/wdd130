@@ -63,3 +63,169 @@
     color: var(--accent2-color);
 }
 
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "info map"
+        "form form"
+        "employees employees";
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.company-info {
+    grid-area: info;
+    padding: 1.5rem;
+    border: 1px solid var(--accent1-color);
+    border-radius: 8px;
+}
+
+.map-container {
+    grid-area: map;
+    overflow: hidden;
+    height: 350px; 
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+.contact-form-section {
+    grid-area: form;
+    padding: 2rem;
+    background-color: var(--accent1-color);
+    border-radius: 8px;
+}
+
+.employee-profiles {
+    grid-area: employees;
+    text-align: center;
+    padding: 1rem;
+}
+
+.profiles-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.employee-profiles figure {
+    flex: 1;
+    text-align: center;
+}
+
+.employee-profiles img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; 
+    border: 4px solid var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.employee-profiles figcaption {
+    font-style: normal;
+    font-weight: bold;
+    color: var(--accent2-color);
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    padding: 0.75rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    width: 100%;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.purpose-group {
+    border: 1px solid var(--secondary-color);
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.purpose-group legend {
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 0 0.5rem;
+}
+
+.radio-options {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.radio-options label {
+    font-weight: normal;
+}
+
+.newsletter-checkbox {
+    flex-direction: row;
+    align-items: center;
+}
+
+.newsletter-checkbox input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.contact-form button[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: var(--accent2-color);
+}
+
+
+@media (max-width: 600px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "info"
+            "map"
+            "form"
+            "employees";
+    }
+
+    .profiles-container {
+        flex-direction: column;
+    }
+}
+
